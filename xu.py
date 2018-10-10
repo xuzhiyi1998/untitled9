@@ -8,9 +8,9 @@ def Merge(left,right):#将各个子列表排序插入新列表中
         else :
             a.append(right[j])
             j=j+1
-            a+=(left[i:])#插入剩余的列表元素
-            a+=(right[j:])
-            return a
+    a+=(left[i:])#插入剩余的列表元素
+    a+=(right[j:])
+    return a
 def Mergesort(list):#将列表拆分并最后合并
     if len(list)<=1:
         return list
@@ -19,5 +19,5 @@ def Mergesort(list):#将列表拆分并最后合并
     right=Mergesort(list[mid:])
     Merge(left,right)
     return Merge(left,right)
-a=[3,5,6,7,9,4]
-Mergesort(a)
+b=[5,4,3,6,7,8,9]
+Mergesort(b)
