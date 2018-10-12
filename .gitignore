@@ -1,2 +1,4 @@
 *.py
+!Insertsort.py
+
 /.idea
